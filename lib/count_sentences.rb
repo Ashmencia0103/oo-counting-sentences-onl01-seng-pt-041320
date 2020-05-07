@@ -25,7 +25,12 @@ class String
 
   def count_sentences
     # call on count_sentences method and get back a string that has the count
-    count_sentences.string.slice!(3) { |sentence| sentence == 3}
-    
+    x = 0
+    count_sentences.string.slice!(x) { |sentence| sentence == x}
+    if x <= 3
+      return true
+    end
+    return false
   end
+  
 end
