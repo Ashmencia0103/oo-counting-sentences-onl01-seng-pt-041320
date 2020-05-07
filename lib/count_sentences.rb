@@ -25,12 +25,9 @@ class String
 
   def count_sentences
     # call on count_sentences method and get back a string that has the count
-    x = 0
-    count_sentences.string.slice!(x) { |sentence| sentence == x}
-    if x <= 3
-      return true
-    end
-    return false
+    # x = 0
+    # count_sentences.string.slice!(x) { |sentence| sentence == x}
+   self.split(/[.?!]+/).count
   end
   
 end
