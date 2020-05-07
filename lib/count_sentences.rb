@@ -29,5 +29,5 @@ class String
     # count_sentences.string.slice!(x) { |sentence| sentence == x}
    self.split(/[.?!]+/).count
   end
-  
+
 end
